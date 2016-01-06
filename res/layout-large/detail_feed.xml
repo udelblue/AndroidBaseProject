@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent"
+	android:layout_width="fill_parent"
+	android:background="@color/bg_color" >
+	
+	<WebView
+	    android:id="@+id/web"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_above="@+id/prgPageLoading"
+	    android:scrollbars="none"
+	    android:scrollbarStyle="insideInset"/>
+	<ProgressBar 
+	    android:id="@+id/prgPageLoading"
+	    android:layout_width="fill_parent"
+	    android:layout_height="8dp"
+	    android:layout_above="@+id/lytNavBar"
+	    style="@android:style/Widget.ProgressBar.Horizontal"
+	    android:progressDrawable="@drawable/loading_url"
+	    android:visibility="gone"/>
+	<LinearLayout
+		android:id="@+id/lytNavBar"
+		android:layout_height="50dip"
+		android:layout_width="fill_parent"
+		android:layout_alignParentBottom="true"
+		android:orientation="horizontal"
+		android:background="@drawable/bar" 
+		android:gravity="center">
+		<ImageButton 
+		    android:id="@+id/btnBack"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/navigation_back"
+		    android:layout_weight="1"
+		    android:paddingTop="13dp"
+		    android:paddingBottom="13dp"
+		    android:layout_marginRight="7dp"
+		    android:background="@drawable/button_web"/>
+		<ImageButton 
+		    android:id="@+id/btnForward"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/navigation_forward"
+		    android:layout_weight="1"
+		    android:paddingTop="13dp"
+		    android:paddingBottom="13dp"
+		    android:layout_marginLeft="6dp"
+		    android:layout_marginRight="6dp"
+		    android:background="@drawable/button_web"/>
+		<ImageButton 
+		    android:id="@+id/btnRefresh"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/navigation_refresh"
+		    android:layout_weight="1"
+		    android:paddingTop="13dp"
+		    android:paddingBottom="13dp"
+		    android:layout_marginLeft="6dp"
+		    android:layout_marginRight="6dp"
+		    android:background="@drawable/button_web"/>
+		<ImageButton 
+		    android:id="@+id/btnStop"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/navigation_cancel"
+		    android:layout_weight="1"
+		    android:paddingTop="13dp"
+		    android:paddingBottom="13dp"
+		    android:layout_marginLeft="6dp"
+		    android:layout_marginRight="6dp"
+		    android:background="@drawable/button_web"/>
+		<ImageButton 
+		    android:id="@+id/btnShare"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/social_share"
+		    android:layout_weight="1"
+		    android:paddingTop="13dp"
+		    android:paddingBottom="13dp"
+		    android:layout_marginLeft="7dp"
+		    android:background="@drawable/button_web"/>
+		
+		
+	</LinearLayout>
+	
+			
+</RelativeLayout>

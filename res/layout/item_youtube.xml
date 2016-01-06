@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id="@+id/lytItemYoutube"
+   android:layout_width="fill_parent"
+   android:layout_height="wrap_content" >
+   <ImageView 
+       android:id="@+id/imgThumb"
+       android:layout_width="90dp"
+       android:layout_height="60dp"
+       android:layout_alignParentLeft="true"
+       android:layout_centerVertical="true"
+       android:layout_marginRight="10dp"
+       android:background="@color/bg_color"/>
+    <LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_centerVertical="true"
+		android:layout_toRightOf="@+id/imgThumb"
+		>
+		<TextView 
+			android:id="@+id/txtTitle" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:textStyle="bold"
+			android:textSize="14sp"
+			android:textColor="@color/titlelist_color"/>
+		<TextView 
+			android:id="@+id/txtUploader"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:textSize="12sp"
+			android:textColor="@color/timelist_color"/>
+		<TextView 
+			android:id="@+id/txtViewCount"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:textSize="14sp"
+			android:textColor="@color/timelist_color"/>
+	</LinearLayout>
+</RelativeLayout>
+	

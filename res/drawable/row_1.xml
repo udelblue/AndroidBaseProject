@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- this code is used to customize the list style -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <!-- When one of item on the list get pressed -->
+    <item android:state_pressed="true">
+        <shape>
+            <solid
+                android:color="#02a8c3"/>
+            <padding 
+                android:left="10dip"
+                android:top="10dip"
+                android:right="10dip"
+                android:bottom="10dip"/>
+        </shape>
+    </item>
+    
+    <!-- When one of item on the list get focused -->
+    <item android:state_focused="true">
+        <shape>
+            <solid
+                android:color="#02a8c3"/>
+            <padding 
+                android:left="10dip"
+                android:top="10dip"
+                android:right="10dip"
+                android:bottom="10dip"/>
+        </shape>
+    </item>
+    
+    <!-- List in normal -->
+    <item>
+        <shape>
+            <solid
+                android:color="#eff7f9"/>
+            <padding 
+                android:left="10dip"
+                android:top="10dip"
+                android:right="10dip"
+                android:bottom="10dip"/>
+        </shape>
+    </item>
+    
+    
+
+    
+</selector>

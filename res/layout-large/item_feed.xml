@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/lytItemFeed"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:layout_centerVertical="true"
+	>
+	<TextView 
+		android:id="@+id/txtTitle" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:textStyle="bold"
+		android:textSize="16sp"
+		android:textColor="@color/titlelist_color"/>
+	<TextView 
+		android:id="@+id/txtPubDate"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:textSize="14sp"
+		android:textColor="@color/timelist_color"/>
+</LinearLayout>

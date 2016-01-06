@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_color">#272b34</color>
+    <color name="label_color">#02a8c3</color>
+    <color name="line_color">#3e424b</color>
+    <color name="divider_color">#707070</color>
+    <color name="title_color">#f1f1f1</color>
+    <color name="description_color">#e4e4e4</color>
+    <color name="text_color">#f1f1f1</color>
+    <color name="titlelist_color">#404040</color>
+    <color name="timelist_color">#5a5a5a</color>
+    <color name="textbutton_color">#f1f1f1</color>
+    <color name="textform_color">#404040</color>
+</resources>

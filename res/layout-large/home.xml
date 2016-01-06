@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent"
+	android:layout_width="fill_parent"
+	android:background="@color/bg_color"
+	android:paddingTop="25dp"
+	android:paddingLeft="15dp"
+	android:paddingRight="15dp"
+	android:paddingBottom="15dp" >
+	
+		<ImageView
+		    android:id="@+id/imgBlogName"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/logo"
+		    android:layout_alignParentTop="true"
+		    android:layout_centerHorizontal="true"
+		    android:layout_marginBottom="10dp"/>
+		<TextView
+		    android:id="@+id/txtBlogDescription"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/blog_description"
+		    android:textColor="@color/description_color"
+		    android:textSize="16sp"
+		    android:textStyle="italic"
+		    android:layout_below="@+id/imgBlogName"
+			android:layout_centerHorizontal="true"
+		    android:layout_marginBottom="25dp"/>
+
+		<GridView
+    		android:id="@+id/gridMenu"
+			android:layout_height="fill_parent"
+			android:layout_width="fill_parent"
+			android:scrollbars="none"
+    		android:columnWidth="75dp"
+			android:numColumns="auto_fit"
+			android:verticalSpacing="15dp"
+			android:horizontalSpacing="25dp"
+			android:stretchMode="columnWidth"
+			android:layout_below="@+id/txtBlogDescription"
+			android:layout_centerHorizontal="true"
+			android:listSelector="@drawable/grid_style"/>
+</RelativeLayout>
